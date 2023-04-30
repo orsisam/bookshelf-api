@@ -1,0 +1,16 @@
+{
+  "name": "bookshelf-api",
+  "version": "1.0.0",
+  "description": "this is a backend project for the Bookshelf-API. This API was created to meet the Basic Dicoding Backend Programming requirements.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2"
+  }
+}
