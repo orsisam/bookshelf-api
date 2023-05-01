@@ -1,4 +1,9 @@
-import { addBookshelf, getAllBooks } from './handlers.js';
+import {
+  addBookshelf,
+  getAllBooks,
+  getBookById,
+  editBookById,
+} from './handlers.js';
 
 const routes = [
   {
@@ -10,6 +15,16 @@ const routes = [
     method: 'GET',
     path: '/books',
     handler: getAllBooks,
+  },
+  {
+    method: 'GET',
+    path: '/books/{bookId}',
+    handler: getBookById,
+  },
+  {
+    method: 'PUT',
+    path: '/books/{bookId}',
+    handler: editBookById,
   },
 ];
 
